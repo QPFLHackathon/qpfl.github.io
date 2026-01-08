@@ -542,8 +542,8 @@ main > section.section:nth-of-type(odd) {
 
 /* Gold tiles + logo sizing */
 .sponsor-logo--gold {
-  min-height: 150px;
-  padding: 1.25rem;
+  min-height: 180px;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,7 +560,7 @@ main > section.section:nth-of-type(odd) {
   display: grid;
   gap:rem;
   align-items: center;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 /* Equal tile sizes (remove the huge horizontal padding) */
@@ -583,11 +583,15 @@ main > section.section:nth-of-type(odd) {
 
 /* Optional: if qBraid still looks a bit larger, nudge only that logo */
 .sponsor-logo--bronze img[alt*="qBraid"] {
-  max-height: 40px;
+  max-height: 35px;
 }
 .sponsor-logo--bronze img[alt*="Zurich"] {
-  max-height: 80px;   /* was 44px */
-  max-width: 260px;
+  max-height: 70px;   /* was 44px */
+  max-width: 230px;
+}
+.sponsor-logo--bronze img[alt*="SQI"] {
+  max-height: 90px;   /* was 44px */
+  max-width: 170px;
 }
 
 /* ============================================
