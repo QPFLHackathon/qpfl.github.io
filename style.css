@@ -659,17 +659,7 @@ grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
     background-position: center;
 }
 
-.committee-card h3 {
-    margin: 0 0 0.2rem;
-    font-size: 1rem;
-}
 
-.committee-card p {
-    margin: 0;
-    font-size: 0.85rem;
-    font-family: var(--font-ui);
-    opacity: 0.8;
-}
 
 /* Logo-specific styles */
 .committee-photo--logo {
@@ -682,7 +672,7 @@ grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
 }
 
 .committee-photo--logo img {
-    max-width: 200%;
+    max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
