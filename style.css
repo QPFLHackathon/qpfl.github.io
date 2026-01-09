@@ -560,7 +560,7 @@ main > section.section:nth-of-type(odd) {
   display: grid;
   gap:rem;
   align-items: center;
-grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
+grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
 }
 
 /* Tablet: 2 columns */
@@ -610,6 +610,11 @@ grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
   max-width: 230px;
 }
 .sponsor-logo--bronze img[alt*="SQI"] {
+  max-height: 90px;   /* was 44px */
+  max-width: 170px;
+}
+
+.sponsor-logo--bronze img[alt*="QSE"] {
   max-height: 90px;   /* was 44px */
   max-width: 170px;
 }
@@ -664,6 +669,24 @@ grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
     font-size: 0.85rem;
     font-family: var(--font-ui);
     opacity: 0.8;
+}
+
+/* Logo-specific styles */
+.committee-photo--logo {
+    background: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.committee-photo--logo img {
+    max-width: 200%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 /* ============================================
