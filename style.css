@@ -560,11 +560,11 @@ main > section.section:nth-of-type(odd) {
   display: grid;
   gap:rem;
   align-items: center;
-grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
+grid-template-columns: repeat(5, 1fr); /* Desktop: 4 columns */
 }
 
 /* Tablet: 2 columns */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .sponsor-logos--bronze {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -609,6 +609,7 @@ grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
   max-height: 70px;   /* was 44px */
   max-width: 230px;
 }
+
 .sponsor-logo--bronze img[alt*="SQI"] {
   max-height: 90px;   /* was 44px */
   max-width: 170px;
@@ -617,6 +618,11 @@ grid-template-columns: repeat(4, 1fr); /* Desktop: 4 columns */
 .sponsor-logo--bronze img[alt*="QSE"] {
   max-height: 90px;   /* was 44px */
   max-width: 170px;
+}
+
+.sponsor-logo--bronze img[alt*="AXA"] {
+  max-height: 80px;   
+  max-width: 80px;
 }
 
 /* ============================================
